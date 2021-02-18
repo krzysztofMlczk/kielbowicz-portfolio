@@ -1,0 +1,52 @@
+.site-title {
+  padding-top: 16%;
+  font-weight: 500;
+}
+
+.title-text {
+  font: normal bold 50px/72px var(--roboto);
+}
+
+.dash-title::after {
+  content: "";
+  height: 2px;
+  width: 18vw;
+  background: black;
+  display: inline-block;
+  margin-left: 5%;
+  transform: translateY(-10px);
+}
+
+.main-title {
+  font-size: 5rem;
+}
+
+.sub-title {
+  font-size: 1.5rem;
+}
+
+.hero-img {
+  padding: 7rem 0;
+  width: 90rem;
+}
+
+.bg-text {
+  font: italic 900 150px/10px var(--roboto);
+  letter-spacing: 5px;
+  color: #f2f2f2;
+  position: absolute;
+  z-index: -1;
+  top: 40%;
+  left: 1%;
+}
+
+.bg-text::after {
+  content: "";
+  height: 220px;
+  width: 220px;
+  position: absolute;
+  left: -105px;
+  transform: translateY(-50%);
+  border: 10px solid #f9f9f9;
+  z-index: -2;
+}

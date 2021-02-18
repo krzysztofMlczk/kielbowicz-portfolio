@@ -1,0 +1,47 @@
+.btn {
+  padding: 0.8rem 2.2rem !important;
+  font: normal 500 16px/20px var(--roboto) !important;
+  position: relative !important;
+  border: 3px solid transparent !important;
+  border-radius: 4px !important;
+}
+
+.primary {
+  background: var(--gradient-color);
+  background-clip: padding-box;
+  color: whitesmoke;
+  transition: background 0.6s ease;
+  box-shadow: var(--box-shadow);
+}
+
+.primary:hover {
+  background: whitesmoke !important;
+  background-clip: padding-box !important;
+  color: black !important;
+}
+
+.primary::after,
+.secondary::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  bottom: -2px;
+  right: -2px;
+  background: var(--gradient-color);
+  z-index: -1;
+  border-radius: 4px;
+}
+
+.secondary {
+  background: white !important;
+  background-clip: padding-box !important;
+  color: black !important;
+  transition: background 0.6s ease;
+}
+
+.secondary:hover {
+  background: var(--gradient-color) !important;
+  color: whitesmoke !important;
+  box-shadow: var(--box-shadow);
+}

@@ -1,0 +1,19 @@
+{
+    "dashTitle": "Hey",
+    "mainTitle": "I am Adrian",
+    "subTitle": "Incredible C++ Developer",
+    "bgText": "C++ Dev",
+    "bgImage": "/images/hero/bg-hero-img.png",
+    "heroImage": "/images/hero/hero-img.png",
+    "alt": "Cannot Display",
+    "buttons": [
+        {
+            "buttonType": "primary",
+            "innerText": "Hire me"
+        },
+        {
+            "buttonType": "secondary",
+            "innerText": "Get CV"
+        }
+    ]
+}
