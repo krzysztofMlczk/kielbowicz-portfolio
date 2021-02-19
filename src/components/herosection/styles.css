@@ -3,14 +3,15 @@
   font-weight: 500;
 }
 
-.title-text {
-  font: normal bold 50px/72px var(--roboto);
+.dash-title {
+  white-space: nowrap;
 }
 
 .dash-title::after {
   content: "";
   height: 2px;
-  width: 18vw;
+  width: 25vw;
+  max-width: 360px;
   background: black;
   display: inline-block;
   margin-left: 5%;
@@ -32,10 +33,11 @@
 
 .bg-text {
   font: italic 900 150px/10px var(--roboto);
+  white-space: nowrap;
   letter-spacing: 5px;
   color: #f2f2f2;
   position: absolute;
-  z-index: -1;
+  z-index: -10;
   top: 40%;
   left: 1%;
 }
@@ -48,5 +50,5 @@
   left: -105px;
   transform: translateY(-50%);
   border: 10px solid #f9f9f9;
-  z-index: -2;
+  z-index: -11;
 }

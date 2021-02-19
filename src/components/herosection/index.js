@@ -5,6 +5,7 @@ import Col from "react-bootstrap/Col";
 import Btn from "../button";
 import Image from "react-bootstrap/Image";
 import Section from "../section";
+import "../../styles/global.css";
 import "./styles.css";
 
 export default function HeroSection({
@@ -25,15 +26,11 @@ export default function HeroSection({
             <HeroSection.DashTitle>{dashTitle}</HeroSection.DashTitle>
             <HeroSection.MainTitle>{mainTitle}</HeroSection.MainTitle>
             <HeroSection.SubTitle>{subTitle}</HeroSection.SubTitle>
-            <div className="site-buttons">
-              <div className="d-flex flex-row flex-wrap">
-                {buttons.map((button) => (
-                  <Btn key={button.innerText} type={button.buttonType}>
-                    {button.innerText}
-                  </Btn>
-                ))}
-              </div>
-            </div>
+            {buttons.map((button) => (
+              <Btn key={button.innerText} type={button.buttonType}>
+                {button.innerText}
+              </Btn>
+            ))}
           </Col>
           <Col lg={6} md={12}>
             <Image className="hero-img" src={heroImage} alt={alt} fluid />
