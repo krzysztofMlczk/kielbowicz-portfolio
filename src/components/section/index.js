@@ -1,12 +1,15 @@
 import React from "react";
+import "./styles.css";
 
-export default function Section({ children, imgUrl }) {
+export default function Section({ children, imgUrl, padding }) {
   const style = {
     background: `url(${imgUrl}) no-repeat 0% 50%`,
-    maxWidth: "2000px",
-    position: "relative",
-    margin: "0 auto",
+    padding: padding,
   };
 
-  return <section style={style}>{children}</section>;
+  return (
+    <section className="default-section" style={style}>
+      {children}
+    </section>
+  );
 }

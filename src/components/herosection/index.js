@@ -9,6 +9,7 @@ import "../../styles/global.css";
 import "./styles.css";
 
 export default function HeroSection({
+  imgFirst,
   dashTitle,
   mainTitle,
   subTitle,
@@ -18,6 +19,7 @@ export default function HeroSection({
   alt,
   buttons,
 }) {
+  const imgOrder = imgFirst ? "first" : "last";
   return (
     <Section imgUrl={bgImage}>
       <Container>
@@ -32,7 +34,7 @@ export default function HeroSection({
               </Btn>
             ))}
           </Col>
-          <Col lg={6} md={12}>
+          <Col lg={{ span: 6, order: imgOrder }} md={12}>
             <Image className="hero-img" src={heroImage} alt={alt} fluid />
           </Col>
         </Row>

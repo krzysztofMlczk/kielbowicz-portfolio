@@ -1,0 +1,13 @@
+.about-section {
+  padding: 8rem 5rem;
+  background-color: black !important;
+}
+
+.about-section-title {
+  font: normal bold 49px/60px var(--roboto);
+  letter-spacing: 21px;
+}
+
+.p-padding {
+  padding: 0.5rem 0;
+}
