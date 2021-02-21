@@ -4,7 +4,7 @@ import "./styles.css";
 export default function Section({ children, imgUrl, padding }) {
   const style = {
     background: `url(${imgUrl}) no-repeat 0% 50%`,
-    padding: padding,
+    padding: padding ? "8rem 5rem" : null,
   };
 
   return (

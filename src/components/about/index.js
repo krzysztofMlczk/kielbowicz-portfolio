@@ -18,7 +18,7 @@ export default function AboutSection({
 }) {
   const imgOrder = imgFirst ? "first" : "last";
   return (
-    <Section padding="8rem 5rem">
+    <Section padding={true}>
       <Container fluid>
         <Row>
           <Col lg={{ span: 6, order: imgOrder }} md={12}>
